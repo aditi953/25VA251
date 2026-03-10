@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <script>
+         //loops->used to perform repetitive tasks, executing a block of code multiple times until a specified condition is met
+
+        //for loop
+
+        let studentList=["Vivek","Vinay","Rahul","Sanjay"];//arrey
+        for(let i=0;i<studentList.length;i++){
+            console.log(studentList[i]);
+        }
+        //while loop..
+        let i=0;
+        while(i<studentList.length){
+            console.log(studentList[i]);
+            i++;
+        }
+
+        //for of loop-->a modern statement used to iterate directly over the values of an iterable object, such as Arrays, Strings, Maps, and Sets
+        for(let x of studentList){
+            console.log(x);
+        }
+
+        //for in loop-->primarily used to iterate over the enumerable properties (keys) of an object
+    </script>
+    
+</body>
+</html>
