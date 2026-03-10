@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>object</title>
+    </head>
+    <body>
+        <script>
+            //object in JS:collection(pair) of keys (properties)and its value
+            //create an object using literal way....
+            let student ={
+                name:"aditi",
+                age:20,
+                isMarried:false,
+                adress:{
+                    streetNo:12,
+                    area:"gangoh",
+                    city:"saharanpur",
+                    pincode:10876,
+
+                },
+                course:"B.Tech",
+                branch:"CSE",
+                year:2025,
+                getInfo:function(){
+                    return "My education detail is" +
+                    student.branch + " " +student.year;
+                },
+                subject:["maths","hindi","science","english"],
+                examDone:null
+                };
+              //access objects key or property
+              console.log(student.adress);//object
+              console.log(student.subject);//array
+              console.log(student.getInfo());//function
+              console.log(typeof(student));
+              //find any key in your object
+              console.log(delete student.name);
+              console.log(student);
+              //find length of object
+              let keyslength=Object.keys(student);
+              console.log(keyslength.length);
+              //iterate objects key using for ...in loop
+              for(let i=0;i<keyslength.length;i++){
+                console.log(student[keyslength[i]]);
+              }
+              for(let x in student){
+                console.log(student[x]);
+              }
+              //create an object using new keyword
+              let MyInfo=new Object();
+              MyInfo.name="aditi";
+              MyInfo.age=20;
+              MyInfo.city="saharanpur";
+              MyInfo.adress=null;
+              MyInfo.mob=987654322;
+              console.log(MyInfo.name);
+
+        </script>
+    </body>
+</html>
