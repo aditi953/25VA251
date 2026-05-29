@@ -1,0 +1,91 @@
+  <!DOCTYPE html> 
+<html> 
+<head> 
+<title>My Website</title> 
+<style>
+    body{ 
+    margin:0; 
+    font-family: Arial, sans-serif; 
+} 
+ 
+
+.header{ 
+    background:#2d7be5; 
+    color:white; 
+    text-align:center; 
+    padding:25px; 
+    font-size: 25px; 
+} 
+ 
+
+.navbar{ 
+    background:#222; 
+    color:white; 
+    display:flex; 
+    justify-content:space-between; 
+    padding:10px 20px; 
+    font-size: 25px; 
+} 
+ 
+.navbar a{ 
+    color:white; 
+    text-decoration:none; 
+    margin-left:15px; 
+} 
+ 
+.container{ 
+    display:flex; 
+    padding:40px; 
+    background:#eee; 
+} 
+ 
+
+.column{ 
+    flex:1; 
+    padding:20px; 
+} 
+ 
+
+.footer{ 
+    background:#333; 
+    color:white; 
+    text-align:center; 
+    padding:1
+}
+</style>
+</head> 
+<body> 
+
+<div class="header"> 
+    <h1>My Website</h1> 
+</div> 
+
+<div class="navbar"> 
+    <div class="logo">Website</div> 
+    <div class="menu"> 
+        <a href="#">Home</a> 
+        <a href="#">About</a> 
+        <a href="#">Services</a> 
+        <a href="#">Contact</a> 
+    </div> 
+</div> 
+
+<div class="container"> 
+    <div class="column"> 
+        <h2>Column 1</h2> 
+        <p>This is the first column. On small devices the column occupies full width, while on 
+medium and large devices it occupies half width using Bootstrap grid classes.</p> 
+    </div> 
+    <div style="border-left: 3px solid black; height: 200px;"></div> 
+    <div class="column"> 
+        <h2>Column 2</h2> 
+        <p>This is the second column. Bootstrap grid system helps to create responsive 
+layout.</p> 
+    </div> 
+</div> 
+
+<div class="footer"> 
+    Copyright © 2026 My Website 
+</div> 
+</body> 
+</html> 
