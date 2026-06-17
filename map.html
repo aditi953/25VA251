@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[67,80,92];
+        let arr=nums.map((val) =>{
+        return val*2;
+        });
+        console.log(arr);
+        //filter
+        let prr=[2,6,8,9,7,5];
+        let newprr=prr.filter((num)=>{
+            return num>5;
+        });
+        console.log(newprr);
+        //reduce
+        let grr=[1,2,3,4];
+        const output = grr.reduce((res,curr) =>{
+        return res+curr;
+    });
+    console.log(output);
+    let marks=[1,2,3,4,5];
+    const p=marks.reduce((res,curr)=>{
+return res*curr;
+    });
+    console.log(p);
+    </script>
+    
+</body>
+</html>
